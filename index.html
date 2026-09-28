@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Untuk Indah ❤️ — Selamat Ulang Tahun</title>
+<meta name="description" content="Sebuah cerita kecil tentang lima tahun perjalanan bersama.">
+<meta property="og:title" content="Untuk Indah ❤️ — Selamat Ulang Tahun">
+<meta property="og:description" content="Sebuah cerita kecil tentang lima tahun perjalanan bersama.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0e0a1a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E❤️%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Jost:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<link rel="stylesheet" href="./asset/css/style.css">
+</head>
+<body class="locked">
+<canvas id="particles" aria-hidden="true"></canvas>
+<div id="cursor" aria-hidden="true"><span></span></div><div id="cursorTrail" aria-hidden="true"></div>
+
+<nav id="nav" aria-label="Navigasi">
+  <button id="menuBtn" aria-label="Menu"><i class="bi bi-list"></i></button>
+  <ul>
+    <li><a href="#home" data-s="home">Home</a></li>
+    <li><a href="#cerita" data-s="cerita">Cerita</a></li>
+    <li><a href="#kenangan" data-s="kenangan">Kenangan</a></li>
+    <li><a href="#surat" data-s="surat">Surat</a></li>
+    <li><a href="#harapan" data-s="harapan">Harapan</a></li>
+  </ul>
+</nav>
+
+<div id="music" class="hidden">
+  <button id="musicBtn" aria-label="Putar atau jeda musik"><span class="eq"><i></i><i></i><i></i><i></i></span></button>
+  <input id="vol" type="range" min="0" max="1" step="0.05" value="0.6" aria-label="Volume">
+</div>
+
+<header id="home" class="hero">
+  <div class="glow g1" data-p="0.15"></div><div class="glow g2" data-p="0.3"></div>
+  <div id="intro" class="intro"></div>
+  <div id="heroEnd" class="hero-end">
+    <p class="big">Untuk <span data-name="short"></span> <i class="bi bi-heart-fill"></i></p>
+    <h1>Selamat Ulang Tahun</h1>
+    <p class="theme">5 Tahun, Ribuan Cerita, Satu Kamu.</p>
+    <button id="startBtn" class="btn magnet">Mulai Perjalanan Kita <i class="bi bi-arrow-down animate__animated animate__bounce animate__infinite"></i></button>
+  </div>
+</header>
+
+<main>
+<section id="cerita" class="sec center">
+  <p class="serif" data-aos="fade-up"><span data-name="short"></span>...</p>
+  <p data-aos="fade-up">Kalau lima tahun terakhir ini<br>adalah sebuah buku,<br>aku tidak tahu berapa banyak halaman<br>yang sudah kita lewati.</p>
+  <p data-aos="fade-up">Ada halaman yang penuh tawa.</p>
+  <p data-aos="fade-up">Ada halaman yang penuh air mata.</p>
+  <p data-aos="fade-up">Ada halaman yang hampir membuat kita menyerah.</p>
+  <p data-aos="fade-up">Tapi entah bagaimana...<br>kita masih berada di sini.</p>
+  <p class="serif" data-aos="fade-up">Bersama.</p>
+</section>
+<div class="divider" aria-hidden="true"><i class="bi bi-suit-heart-fill"></i></div>
+<section class="sec center years">
+  <h2 class="huge" data-aos="zoom-in-up">5 TAHUN</h2>
+  <p class="count" data-aos="fade-up"><span id="counter">0</span>+ hari</p>
+  <p data-aos="fade-up">Ribuan percakapan.<br>Ratusan kenangan.<br>Banyak sekali cerita.</p>
+  <p data-aos="fade-up">Dan satu orang<br>yang tetap ingin aku temui<br>di setiap hari berikutnya.</p>
+</section>
+<div class="divider" aria-hidden="true"><i class="bi bi-suit-heart-fill"></i></div>
+<section id="kenangan" class="sec">
+  <h2 class="title" data-aos="zoom-in">Kenangan Kita</h2>
+  <p class="sub" data-aos="fade-up">Beberapa momen mungkin terlihat sederhana,<br>tapi justru hal-hal sederhana itulah<br>yang paling ingin aku ingat.</p>
+  <div id="gallery" class="gallery"></div>
+</section>
+<div class="divider" aria-hidden="true"><i class="bi bi-suit-heart-fill"></i></div>
+<section class="sec">
+  <h2 class="title" data-aos="zoom-in">Perjalanan Kita</h2>
+  <div id="timeline" class="timeline"><div class="tl-line"><b id="tlFill"></b></div></div>
+</section>
+<div class="divider" aria-hidden="true"><i class="bi bi-suit-heart-fill"></i></div>
+<section class="sec center">
+  <h2 class="title" data-aos="zoom-in">Tentang Kamu</h2>
+  <p data-aos="fade-up"><span data-name="short"></span>,<br>Mungkin aku tidak selalu pandai<br>mengungkapkan semuanya.</p>
+  <p data-aos="fade-up">Kadang aku terlalu sibuk.<br>Kadang aku terlalu diam.<br>Kadang aku bahkan lupa mengatakan<br>betapa berartinya kamu.</p>
+  <p data-aos="fade-up">Tapi ada satu hal yang ingin kamu tahu...</p>
+  <p data-aos="fade-up">Aku melihat semua perjuanganmu.<br>Aku melihat bagaimana kamu bertahan.<br>Aku melihat bagaimana kamu tetap ada<br>di saat keadaan tidak selalu mudah.</p>
+  <p class="serif" data-aos="fade-up">Dan untuk semua itu...<br>Terima kasih.</p>
+</section>
+<div class="divider" aria-hidden="true"><i class="bi bi-suit-heart-fill"></i></div>
+<section class="sec center struggle">
+  <h2 class="title" data-aos="zoom-in">Kita Tidak Selalu Baik-Baik Saja</h2>
+  <p data-aos="fade-up">Lima tahun bukan tentang<br>selalu bahagia.</p>
+  <p data-aos="fade-up">Lima tahun adalah tentang<br>tetap memilih untuk bertahan<br>ketika keadaan tidak mudah.</p>
+  <p data-aos="fade-up">Tentang belajar meminta maaf.<br>Tentang belajar memahami.<br>Tentang belajar menjadi lebih baik.</p>
+  <p data-aos="fade-up">Tentang dua orang yang mungkin<br>tidak sempurna,<br>tetapi tetap berusaha.</p>
+  <p class="huge2" data-aos="zoom-in-up">Dan aku bersyukur...<br>kita masih di sini.</p>
+</section>
+<div class="divider" aria-hidden="true"><i class="bi bi-suit-heart-fill"></i></div>
+<section id="surat" class="sec center">
+  <p data-aos="fade-up">Ada satu surat<br>yang ingin aku berikan untukmu.</p>
+  <div id="envelope" class="envelope" data-aos="fade-up"><div class="flap"></div><div class="paper-peek"></div><div class="body"></div></div>
+  <button id="openLetter" class="btn magnet">Buka Surat <i class="bi bi-envelope-heart-fill animate__animated animate__heartBeat animate__infinite"></i></button>
+</section>
+<div class="divider" aria-hidden="true"><i class="bi bi-suit-heart-fill"></i></div>
+<section id="harapan" class="sec center">
+  <p data-aos="fade-up">Satu permintaan sebelum lilinnya padam...</p>
+  <div id="cake" class="cake" aria-label="Kue ulang tahun">
+    <div class="candle"><div class="flame"></div><div class="smoke"></div></div>
+    <div class="layer l3"></div><div class="layer l2"></div><div class="layer l1"></div><div class="plate"></div>
+  </div>
+  <button id="blowBtn" class="btn magnet">Tiup Lilin <i class="bi bi-stars animate__animated animate__pulse animate__infinite"></i></button>
+  <p id="wish" class="serif wish">Semoga semua yang kamu semogakan<br>menemukan jalannya.</p>
+</section>
+<div class="divider" aria-hidden="true"><i class="bi bi-suit-heart-fill"></i></div>
+<section class="sec center gift-sec">
+  <p data-aos="fade-up">Tapi...<br>aku masih punya satu kejutan.</p>
+  <div id="gift" class="gift" data-aos="fade-up"><div class="lid"></div><div class="box"></div><span class="emo"><i class="bi bi-gift-fill"></i></span></div>
+  <button id="giftBtn" class="btn magnet">Buka Kejutan <i class="bi bi-gift-fill animate__animated animate__heartBeat animate__infinite"></i></button>
+  <div id="giftMsg" class="gift-msg"><h2>SELAMAT ULANG TAHUN</h2><p class="serif" data-name="full" data-upper></p></div>
+</section>
+<div class="divider" aria-hidden="true"><i class="bi bi-suit-heart-fill"></i></div>
+<section class="sec center final">
+  <p data-aos="fade-up">Dan kalau suatu hari nanti<br>kita melihat kembali perjalanan ini...</p>
+  <p data-aos="fade-up">Aku ingin kita tersenyum<br>dan berkata:</p>
+  <p class="huge2" data-aos="zoom-in-up">"Kita berhasil melewati semuanya."</p>
+  <p class="serif" data-aos="fade-up" style="margin-top:4rem">Selamat ulang tahun, <span data-name="short"></span>.</p>
+  <p data-aos="fade-up">Terima kasih sudah berjuang bersamaku<br>selama lima tahun.</p>
+  <p data-aos="fade-up">Dan kalau masih ada banyak halaman<br>setelah ini...<br>aku ingin menulisnya bersamamu.</p>
+  <p id="finalSign" class="sign" data-aos="fade-up"><i class="bi bi-heart-fill animate__animated animate__heartBeat animate__infinite"></i><br>Untuk <span data-name="short"></span>,<br>dengan segala rasa yang sulit<br>dijelaskan dengan kata-kata.<br>— <span data-name="sender"></span></p>
+</section>
+</main>
+
+<div id="letterModal" class="modal" aria-hidden="true">
+  <div class="paper" role="dialog" aria-label="Surat">
+    <button id="closeLetter" class="x" aria-label="Tutup surat"><i class="bi bi-x-lg"></i></button>
+    <div id="letterText"></div>
+  </div>
+</div>
+
+<div id="lightbox" class="lb" aria-hidden="true">
+  <button class="x" id="lbClose" aria-label="Tutup"><i class="bi bi-x-lg"></i></button>
+  <button class="nv prev" id="lbPrev" aria-label="Sebelumnya"><i class="bi bi-chevron-left"></i></button>
+  <figure><div id="lbImg"></div><figcaption><b id="lbTitle"></b><span id="lbDesc"></span><em id="lbCount"></em></figcaption></figure>
+  <button class="nv next" id="lbNext" aria-label="Berikutnya"><i class="bi bi-chevron-right"></i></button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script src="./asset/js/script.js"></script>
+</body>
+</html>
