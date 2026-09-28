@@ -1,7 +1,7 @@
 /* CONFIG */
 const config = {
   name: "Indah Septiana Ayu Lestari",
-  shortName: "Indah",
+  shortName: "Septiana",
   sender: "Jhodi",          // <-- ganti dengan namamu
   yearsTogether: 5,
   daysCounter: 1825,            // angka dekoratif (5 x 365), boleh diubah
@@ -10,11 +10,11 @@ const config = {
 
 // Tambah / ubah foto di sini. Foto belum ada = placeholder elegan otomatis.
 const memories = [
-  { image: "./asset/image/photo1.jpg", title: "Awal Cerita", description: "Salah satu awal dari perjalanan kita." },
-  { image: "./asset/image/photo2.jpg", title: "Hari yang Indah", description: "Sebuah momen sederhana yang selalu aku ingat." },
-  { image: "./asset/image/photo3.jpg", title: "Kita", description: "Tidak sempurna, tapi selalu berusaha." },
-  { image: "./asset/image/photo4.jpg", title: "Bersama", description: "Satu lagi kenangan yang ingin aku simpan." },
-  { image: "./asset/image/photo5.jpg", title: "Tetap di Sini", description: "Masih bersama, sampai hari ini." }
+  { image: "https://i.ibb.co.com/dzCf5tg/14d5fac6-1357-4dc4-a717-36c33e9d4911.jpg", title: "Awal Cerita", description: "Salah satu awal dari perjalanan kita." },
+  { image: "https://i.ibb.co.com/prfG26mG/7761-BAFB-0-AC0-4-CD7-B39-A-3-BFFE1-F35579.jpg", title: "Hari yang Indah", description: "Sebuah momen sederhana yang selalu aku ingat." },
+  { image: "https://i.ibb.co.com/jPxNzkqP/468-A82-A6-A6-A9-4386-B94-C-C01-C191789-F9.jpg", title: "Kita", description: "Tidak sempurna, tapi selalu berusaha." },
+  { image: "https://i.ibb.co.com/vCY0gFnS/2657dbcd-5d34-4fba-a288-cf13a2dd25c8.jpg", title: "Bersama", description: "Satu lagi kenangan yang ingin aku simpan." },
+  { image: "https://i.ibb.co.com/Q7tr1DSH/eea74a91-0b5e-47f4-9097-ac858b9311ce.jpg", title: "Tetap di Sini", description: "Masih bersama, sampai hari ini." }
 ];
 
 // Ubah kalimat perjalanan sesuai ceritamu sendiri.
